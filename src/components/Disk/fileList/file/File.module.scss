@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+p {
+	color: rgb(0, 0, 0);
+	font-family: 'Itim', cursive;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+@media (max-width: 600px) {
+	.text {
+		font-size: 12px;
+	}
+	.file {
+		margin-top: 5px;
+		margin-left: 5px;
+		margin-right: 5px;
+		border-bottom: 1px solid rgb(0, 39, 193);
+		display: grid;
+		grid-template-columns: 1fr 4fr repeat(4, 1fr);
+		&:hover {
+			transform: scale(1.02);
+			cursor: pointer;
+		}
+		&_img {
+			display: none;
+		}
+		&_date {
+			grid-column-start: 5;
+			justify-self: center;
+			align-self: center;
+		}
+		&_size {
+			grid-column-start: 6;
+			justify-self: center;
+			align-self: center;
+		}
+	}
+	.file_btn_file {
+		&_download {
+			display: grid;
+			background-color: rgb(130, 141, 238);
+			grid-column-start: 3;
+			width: 60px;
+			height: 40px;
+			font-family: 'Itim', cursive;
+			color: whitesmoke;
+			justify-self: center;
+			align-self: center;
+			border-radius: 10px;
+		}
+		&_delete {
+			display: grid;
+			grid-column-start: 4;
+			background-color: rgb(130, 141, 238);
+			width: 80px;
+			height: 40px;
+			justify-self: center;
+			align-self: center;
+			font-family: 'Itim', cursive;
+			color: whitesmoke;
+			border-radius: 10px;
+		}
+	}
+}
+
+.file {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-bottom: 2px solid rgb(0, 39, 193);
+	display: grid;
+	grid-template-columns: 1fr 4fr repeat(4, 1fr);
+	&:hover &_date {
+		grid-column-start: 3;
+	}
+	&:hover &_size {
+		grid-column-start: 4;
+	}
+	&:hover &_btn_file_download {
+		display: block;
+	}
+	&:hover &_btn_file_delete {
+		display: block;
+	}
+	&_btn_file {
+		&_download {
+			display: none;
+			grid-column-start: 5;
+			background-color: rgb(130, 141, 238);
+			width: 80px;
+			height: 40px;
+			justify-self: center;
+			align-self: center;
+			font-family: 'Itim', cursive;
+			color: whitesmoke;
+			border-radius: 10px;
+		}
+		&_delete {
+			display: none;
+			background-color: rgb(130, 141, 238);
+			grid-column-start: 6;
+			width: 80px;
+			height: 40px;
+			font-family: 'Itim', cursive;
+			color: whitesmoke;
+			justify-self: center;
+			align-self: center;
+			border-radius: 10px;
+		}
+	}
+	&:hover {
+		transform: scale(1.02);
+		cursor: pointer;
+	}
+	&_img {
+		align-self: center;
+		height: 50px;
+		width: 60px;
+		justify-self: center;
+	}
+	&_date {
+		grid-column-start: 5;
+		justify-self: center;
+		align-self: center;
+	}
+	&_size {
+		grid-column-start: 6;
+		justify-self: center;
+		align-self: center;
+	}
+}

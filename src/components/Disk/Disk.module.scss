@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+.disk_cont {
+	margin-top: 15px;
+}
+
+.disk_button_cont {
+	display: flex;
+	width: 50%;
+	justify-content: center;
+}
+
+.disk_upload {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	&_input {
+		display: none;
+	}
+
+	&_label {
+		border: 2px dashed black;
+		padding: 5px 10px;
+		cursor: pointer;
+	}
+}
+
+.newDir_button {
+	margin-left: 10px;
+}
+
+.back_button {
+	font-family: 'Itim', cursive;
+	border-radius: 5px;
+	background-color: rgb(130, 141, 238);
+	font-size: 20px;
+	height: 40px;
+	font-weight: 700;
+	cursor: pointer;
+	&:hover {
+		background-color: rgb(101, 113, 223);
+	}
+}
+
+.newDir_button {
+	font-family: 'Itim', cursive;
+	border-radius: 5px;
+	background-color: rgb(130, 141, 238);
+	font-size: 20px;
+	font-weight: 700;
+	height: 40px;
+	cursor: pointer;
+	&:hover {
+		background-color: rgb(101, 113, 223);
+	}
+}
+
+.disk_select {
+	background-color: rgb(130, 141, 238);
+	outline: none;
+	margin-left: 10px;
+	border-radius: 10px;
+	color: black;
+	cursor: pointer;
+}
+
+.drop_area {
+	width: 97%;
+	height: calc(100vh - 50px - 40px);
+	margin: 20px;
+	border: dashed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+}
+
+@media (max-width: 600px) {
+	.newDir_button {
+		font-size: 10px;
+	}
+
+	.back_button {
+		font-size: 10px;
+	}
+
+	.disk_upload_label {
+		font-size: 10px;
+	}
+}
